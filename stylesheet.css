@@ -1,0 +1,33 @@
+#maindiv{
+	
+}
+#body{
+	width: 90%;
+	margin: auto;
+	padding: 8px;
+	border: 2px solid #ffff80;
+	border-radius: 5px;
+	background: #ffff80;
+	margin-top: 5px;
+	align: center;
+	clear: left;
+	border-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#logo{
+	align:center;
+	float:left;
+	margin-left: 1em;
+	margin-top: 3px;
+	maring-bottom: 3px;
+}
+#logo-image{
+	align:center;
+}
+#head{
+background: darkgrey;
+	
+}
+body{
+	background-color: lightgrey;
+	
+}
