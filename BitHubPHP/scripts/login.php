@@ -1,6 +1,6 @@
 <?php
 session_start();
-	$db = @new mysqli("localhost","root","","tp_website");
+	$db = @new mysqli("localhost","root","masterkey","tp_website");
 	if(mysqli_connect_errno())
 		echo "Connectionerror: " . mysqli_connect_error();
 	else{
