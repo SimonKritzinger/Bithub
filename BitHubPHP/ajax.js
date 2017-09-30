@@ -3,6 +3,10 @@ $(document).ready(function(){
 		$('#projects').on('click', function(e){
 			callPage("test.php");
 		});
+		
+		$('#profile').on('click', function(e){
+			callPage("options.php");
+		});
 });
 
 function callPage(pageInput){

@@ -64,7 +64,7 @@
             <?php 
           	 }
           	 else{
-          	     echo("<li><a href='javascript:void(0)'>".$_SESSION["name"]." ".$_SESSION["lastname"]."</a></li>");
+          	     echo("<li><a id='profile'href='javascript:void(0)'>".$_SESSION["name"]." ".$_SESSION["lastname"]."</a></li>");
           	     echo("<li><a href='scripts/logout.php'>Logout</a></li>");
           	   }
             ?>

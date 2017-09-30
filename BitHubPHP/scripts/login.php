@@ -21,7 +21,7 @@ session_start();
 				if(password_verify($_POST["password"],$dbhash)){
 					$_SESSION["usermail"] = $mail;
 					$stmt->close();
-					$sql = "SELECT uname, ulastname FROM user WHERE umail like ?";
+					$sql = "SELECT uuserid, uname, ulastname FROM user WHERE umail like ?";
 					$stmt = $db->prepare($sql); 
 					if(!$stmt){
 					}
@@ -29,10 +29,11 @@ session_start();
 					    $stmt->bind_param("s",$mail);
 					    $stmt->execute();
 					    $stmt->store_result();
-					    $stmt->bind_result($dbname, $dblastname);
+					    $stmt->bind_result($user_id,$dbname, $dblastname);
 					    $stmt->fetch();
 					    $_SESSION["name"] = $dbname;
 					    $_SESSION["lastname"] = $dblastname;
+					    $_SESSION["user_id"] = $user_id;
 					
 					}
 				}
